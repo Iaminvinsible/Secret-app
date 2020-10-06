@@ -1,4 +1,22 @@
 //jshint esversion:6
+
+
+
+
+///////////////welcome pop-up//////////////////
+  var alerted = sessionStorage.getItem('alerted') || '';
+     if (alerted != 'yes') {
+      alert("Welcome to our Secret sharing app !");
+      sessionStorage.setItem('alerted','yes');
+    }
+
+
+
+
+
+
+
+
 require('dotenv').config();
 const express=require("express");
 const bodyParser = require("body-parser");
